@@ -1,0 +1,80 @@
+<div>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+          type="text"
+          id="firstName"
+          class="form-control"
+          formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+          type="text"
+          id="lastName"
+          class="form-control"
+          formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <label for="artistName">Artist Name</label>
+      <input
+          type="text"
+          id="artistName"
+          class="form-control"
+          formControlName="artistName">
+    </div>
+    <div class="form-group">
+      <label for="genre">Genre</label>
+      <input
+          type="text"
+          id="genre"
+          class="form-control"
+          formControlName="genre">
+    </div>
+    <div class="form-group">
+      <label for="soundcloudUrl">Soundcloud URL</label>
+      <input
+          type="text"
+          id="soundcloudUrl"
+          class="form-control"
+          formControlName="soundcloudUrl">
+    </div>
+    <div class="form-group">
+      <label for="dropboxUrl">Dropbox URL</label>
+      <input
+          type="text"
+          id="dropboxUrl"
+          class="form-control"
+          formControlName="dropboxUrl">
+    </div>
+    <div class="form-group">
+      <label for="websiteUrl">Website URL</label>
+      <input
+          type="text"
+          id="websiteUrl"
+          class="form-control"
+          formControlName="websiteUrl">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+          type="email"
+          id="email"
+          class="form-control"
+          formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+          type="password"
+          id="password"
+          class="form-control"
+          formControlName="password">
+    </div>
+    <button
+        class="btn btn-primary"
+        type="submit"
+        [disabled]="!myForm.valid">Submit</button>
+  </form>
+</div>
